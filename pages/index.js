@@ -1,7 +1,8 @@
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+
 export default function Home() {
   return (
-    <div>
+    <div style={{ padding: "20px" }}>
       <h1>OEMAlert</h1>
 
       <SignedOut>
@@ -10,6 +11,7 @@ export default function Home() {
 
       <SignedIn>
         <UserButton />
+        <p>You are logged in.</p>
       </SignedIn>
     </div>
   );
